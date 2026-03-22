@@ -10,6 +10,8 @@ import HeroBanner from "@/components/HeroBanner";
 import MovieRow from "@/components/MovieRow";
 import RecentlyViewedRow from "@/components/RecentlyViewedRow";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const [trending, popular, topRated, nowPlaying, popularTV, topRatedTV] =
     await Promise.all([
